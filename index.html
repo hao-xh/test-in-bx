@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      window.track123WidgetConfig = {
+        api_base: "https://www.track123.com",
+        provider_type: 3,
+        language: "zh_CN",
+        theme_color: "#5B62FF",
+        width_type: "auto",
+        width_value: "",
+      };
+      (function (e, t, n) {
+        var r,
+          i = e.getElementsByTagName(t)[0];
+        if (e.getElementById(n)) return;
+        r = e.createElement(t);
+        r.src = "https://www.track123.com/track123-widget.min.js";
+        i.parentNode.insertBefore(r, i);
+      })(document, "script", "track123-tracking-widget");
+    </script>
+    <div id="track123-tracking-widget"></div>
+  </body>
+</html>
